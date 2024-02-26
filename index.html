@@ -272,7 +272,7 @@ Cloud infrastructures</p>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Christos Papoulas 2015</span>
+                    <span class="copyright">Copyright &copy; Christos Papoulas <span id="year"></span></span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -403,7 +403,9 @@ Finally, in section 5 we conclude</p>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
-
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 <!-- end -->
 </html>
